@@ -8,6 +8,7 @@ const wrapper = require('../helpers/wrapper');
  */
 const filmList = async () => {
   const swapiResponse = await swapi.films();
+  
   const filmList = [];
   swapiResponse.forEach(responseFilm => {
     // destructure only the fields that do not have urls in them

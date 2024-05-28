@@ -13,7 +13,7 @@ let cache = flatCache.load('starwarsCache', './cache');
  * middleware to log requests
  * @param  {object}   req  request
  * @param  {object}   res  response
- * @param  {function} next callback
+ * @param  {function} next callbackb
  */
 const requestTime = function(req, res, next) {
   req.requestTime = Date.now();

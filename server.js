@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const rp = require('request-promise');
-const port = process.env.PORT || 1122;
+const port = process.env.PORT || 3000;
 const cors = require('cors');
 app.use(cors({ origin: true }));
 const util = require('./helpers/util');

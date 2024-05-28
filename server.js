@@ -18,7 +18,7 @@ let cache = flatCache.load('starwarsCache', './cache');
 const requestTime = function(req, res, next) {
   req.requestTime = Date.now();
   console.log('method ' + req.method + ' and url ' + req.url);
-  console.log('request came across at ' + req.requestTime);
+  console.log('request came across at' + req.requestTime);
   next();
 };
 app.use(requestTime);
